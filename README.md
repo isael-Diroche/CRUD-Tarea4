@@ -12,14 +12,14 @@ Ahora le voy a contar un poco acerca del proyecto y de sus aspectos que hacen qu
 >BOTONES
 
 <p>Lo primero es que el boton <b>salir</b> con una sintaxis basica que indica que el sistema deje de ejecutar saliendo del programa</p>
-```java
-System.exit(0);
-```
-</br>
 
+
+</br>
 <p>El boton <b>Acceder</b></p> En este Instanciamos con el metodo conexion para conectar con la base de datos posteriormente creamos variables de cadenas para almacenar los valores de los TextField (Cuadros de texto) y comparar esta informacion colocada con la que tenemos en la base de datos y si estos estan en la base de datos pues se iniciara seccion en el programa abriendo Tabla.java.</br>
 
 Luego de esto cerramos la conexion con cn.con.close();  Sin olvidar que entramos todo dentro de un Try Catch para recojer errores y evitar que estos errores detengan nuestro programa.
+
+
 ```java
 String Pass = new String(Password.getPassword());
         String User = Username.getText();
@@ -60,7 +60,17 @@ El boton <b>Registrarse</b> lo unico que hace es crear el nuevo Jframe con el fo
     this.setVisible(false);
 ```
 
+#SIGN-UP 
+
+
 <img src="MySQL_CRUD/src/mysql_crud/images/registro_administradores2.png" width="500" height="300" align="left" title="Ingreso de administrador">
+Este pide al usuario que se quiera registrar que ingrese los datos correspondientes para poder accerder al registro.</br>
+
+Si al escribir los datos deja algun campo vacio este le indicara error excibiendo un JOptionPane donde muestre el mensaje de que alguno de los campos esta vacio. Tambien si el campo de la contraseña y verificar contraseña no es el mismo entonces tambien mostrara un mensaje que dira que las contraseñas son diferentes.
+
+Al igual que los demas frames tiene un pequeño boton de <b>Limpiar</b> con el que se podran limpiar los campos para empezar denuevo a escribir en ellos.
+
+Y por ultimo un boton de <b>Cancelar Proceso</b> en la esquina inferior izquierda para salir del registro y volver al Login.
 
 
 
@@ -68,7 +78,7 @@ El boton <b>Registrarse</b> lo unico que hace es crear el nuevo Jframe con el fo
 
 
 
-
+<h2>Documentacion</h2>
 
 Tabla de botones por Frames
 | Login      | SignUp          | Registro  |
@@ -77,7 +87,20 @@ Tabla de botones por Frames
 | Registrate | Cancelar proceso| Agregar   |
 | Salir      | git diff        | Modificar |
 | Limpiar    | Limpiar         | Eliminar  |
+</br>
 
 
+
+<details>
+        <summary>Recursos utilizados</summary>
+        <p>
+        Lenguaje de programacion <b>JAVA</b> </br>
+        Entorno de programacion <b>Apache NetBeans v12.6</b></br>
+        Gestor de Base de Datos <b>MySQl Workbench</b></br>
+        Video hecho con <b>Microsoft PowerPoint</b></br>
+        Diseño maquetado y disenado en <a href="https://www.figma.com/file/F7raMc217e5gD0bF59pR3L/Untitled?node-id=0%3A1">Figma</a></br>
+        </p>
+</details>
+
+## Fecha de finalizacion del proyecto
 8/4/2021
-
